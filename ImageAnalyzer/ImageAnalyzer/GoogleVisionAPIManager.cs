@@ -29,7 +29,7 @@ namespace ImageAnalyzer
                 if(i++ > 5)
                 {
                     i = 0;
-                    Task.Delay(TimeSpan.FromMinutes(1)).Wait();
+                   // Task.Delay(TimeSpan.FromMinutes(1)).Wait();
                 }
                 // Load the image file into memory
                 var image = Image.FromFile(imageFile);

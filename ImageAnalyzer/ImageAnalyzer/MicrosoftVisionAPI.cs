@@ -14,7 +14,7 @@ namespace ImageAnalyzer
     internal class MicrosoftVisionAPI
     {
         // Replace the subscriptionKey string value with your valid subscription key.
-        const string subscriptionKey = "5ed795c2a2b94421b6e990d6beac79a7";
+        const string subscriptionKey = "a4ea7465a2524f61af97bf4262a9fa3d";
         const string subscriptionKey1 = "7db5bc125a9541df9ff5a05b775aa635";
 
         private enum dataKeys

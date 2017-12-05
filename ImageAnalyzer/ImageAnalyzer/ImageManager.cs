@@ -62,9 +62,9 @@ namespace ImageAnalyzer
                     {
                         Form1.GetInstance().writeToConsole("Loading: "+file);
                         Dictionary<string, List<string>> googleResult = await GoogleVisionAPIManager.detectAnnotations(file);
-                        //Dictionary<string, List<string>> microsoftResult = await MicrosoftVisionAPI.MakeAnalysisRequest(file);
-                        //mergeToSecondList(googleResult, microsoftResult);
-                        mergeToFinal(file, googleResult);
+                        Dictionary<string, List<string>> microsoftResult = await MicrosoftVisionAPI.MakeAnalysisRequest(file);
+                        mergeToSecondList(googleResult, microsoftResult);
+                        mergeToFinal(file, microsoftResult);
                         Form1.GetInstance().writeToConsole(file + " processing is complete");
                     }
                     catch (Exception ex)
